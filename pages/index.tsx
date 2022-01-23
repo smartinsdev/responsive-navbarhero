@@ -1,9 +1,14 @@
 import type { NextPage } from "next";
 import Link from "next/link";
+import Head from "next/head"
 import Header from "../components/Header";
 
 const Home: NextPage = () => {
   return (
+    <>
+    <Head>
+      <title>Responsive Navhero</title>
+    </Head>
     <div className="max-w-7xl mx-auto h-screen px-2 lg:px-0">
       <Header />
       <div className="max-w-5xl mx-auto pt-14">
@@ -80,6 +85,7 @@ const Home: NextPage = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
